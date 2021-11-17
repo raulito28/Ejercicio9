@@ -1,6 +1,6 @@
 import pickle
 def store(var, Coches):
-    pickle.dump(var, open(Coches, "w"))
+    pickle.dump(var, open(Coches, "wb"))
 
 def retrieve(Coches):
     try:
