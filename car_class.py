@@ -14,3 +14,4 @@ class Car:
         self.pos_y += y
     def get_pos(self,):
         return self.pos_x, self.pos_y
+    def set_wheel(self, wheel):
