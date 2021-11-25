@@ -12,6 +12,18 @@ class Car:
     def move_incr(self, x, y):
         self.pos_x += x
         self.pos_y += y
-    def get_pos(self,):
+    def get_pos(self):
         return self.pos_x, self.pos_y
-    def set_wheel(self, wheel):
+
+class Wheel:
+    def __init__(self, ancho, rodadura, diametro):
+        self.ancho = ancho
+        self.rodadura = rodadura
+        self.diametro = diametro
+        self.presion = 0
+
+    def set_pressure(self, presion):
+        self.presion = presion
+
+    def print_info(self):
+        return self.ancho, self.rodadura, self.diametro, self.presion
