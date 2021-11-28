@@ -1,6 +1,7 @@
 import pickle
-def store(var, filename):
-    pickle.dump(var, open(filename, "wb"))
+
+def store(data, filename):
+    pickle.dump(data, open(filename, "wb"))
 
 def retrieve(filename):
     try:
