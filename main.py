@@ -13,9 +13,9 @@ while True:
     modelo = input("Modelo: ")
     combustible = input("Combustible: ")
     cilindrada = input("Cilindrada: ")
-    ancho = input("Ancho rueda: ")
-    rodadura = input("Ancho de rodadura: ")
-    diametro = input("Diametro llanta: ")
+    ancho = input("Ancho rueda(mm): ")
+    rodadura = input("Ancho de rodadura(%): ")
+    diametro = input("Diametro llanta(pulgadas): ")
 
     wheel = car_class.Wheel(ancho, rodadura, diametro)
     coche = car_class.Car(marca, modelo, combustible, cilindrada, wheel)
